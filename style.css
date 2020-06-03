@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:black;
+}
+
+.container{
+  border:5px solid blue;
+}
+
+.cell{
+  padding:2rem ;
+  background:#dedede;
+  text-transform:uppercase;
+  font-weight:blod; 
+  text-align:center;
+  border:1px solid red;
+}
