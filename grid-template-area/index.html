@@ -6,26 +6,39 @@
     <title>css grid</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <!-- align-items: justify-items---- content within the items 
-  justify-self align-self single item content
+  <!--grid-template area
    -->
   <style>
     .container{
-      min-height:100vh;
       display:grid;
-      grid-template-columns:repeat(3,1fr) ; 
-       grid-template-rows:repeat(2,1fr);  
-       align-items:center;
-       align-items:flex-end;
-       align-items:flex-start;
-       justify-items:center;
-
-     .cell-1{
-       justify-self:end;
-     }
-
-     
-    } 
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-template-areas:
+      "a a b"
+      "a a b"
+      "c c b"
+      "d d d"
+      "e f f"
+    }
+    .cell-1{
+      grid-area:a;
+    }
+    .cell-2{
+      grid-area:b;
+    }
+    .cell-3{
+      grid-area:c;
+    }
+    .cell-4{
+      grid-area:d;
+    }
+    cell-5{
+      grid-area:e;
+    }
+    .cell-6{
+      grid-area:f;
+    }
+    
   </style>
   <body>
     <div class="container">
